@@ -27,7 +27,9 @@ function search(nameKey, myArray){
 function sendEmail (recipient, subject, html) {
   client.transmissions.send({
       options: {
-        sandbox: false
+        sandbox: false,
+        open_tracking: false,
+        click_tracking: false
       },
       content: {
         from: 'hi@aristotle.fless.pro',
